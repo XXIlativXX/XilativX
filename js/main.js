@@ -1,4 +1,4 @@
-if(window.location.href != "file:///C:/Users/denib/Desktop/Website%202/m.html#" || window.location.href != "xxilativxx.github.io/m") {
+if(window.location.href != "file:///C:/Users/denib/Desktop/Website%202/m.html#" || window.location.href != "m") {
     if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { // detect mobile browser
         window.location.replace("m"); // redirect if mobile browser detected
     }
