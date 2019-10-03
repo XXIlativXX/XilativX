@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="43" viewBox="0 0 61 43">
+  <g id="MenuBtn" transform="translate(-488 -209)">
+    <rect id="Rechteck_1" data-name="Rechteck 1" width="61" height="10" rx="5" transform="translate(488 209)"/>
+    <path id="Pfad_1" data-name="Pfad 1" d="M5,0H56a5,5,0,0,1,0,10H5A5,5,0,0,1,5,0Z" transform="translate(488 226)"/>
+    <path id="Pfad_2" data-name="Pfad 2" d="M5,0H56a5,5,0,0,1,0,10H5A5,5,0,0,1,5,0Z" transform="translate(488 242)"/>
+  </g>
+</svg>

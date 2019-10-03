@@ -1,0 +1,69 @@
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+body a, html a {
+  text-decoration: none;
+}
+
+header {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: white;
+  width: 100%;
+}
+
+header .icon {
+  max-width: 3.1%;
+  width: 100%;
+  padding: 0 .5vw;
+}
+
+header .logo {
+  color: black;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+header .menu-btn {
+  cursor: pointer;
+  width: 100%;
+  max-width: 3%;
+  float: right;
+  margin: 1.5vw 1vw;
+}
+
+header.sticky {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0px 3px 3px 0px #545454;
+          box-shadow: 0px 3px 3px 0px #545454;
+  position: fixed;
+  top: 0;
+}
+
+.page-header {
+  height: 200px;
+  background: #CCC;
+}
+
+section {
+  padding: 4em;
+}
+
+section .box {
+  text-align: center;
+  font-size: 3vw;
+  margin: 4em auto;
+  width: 70%;
+}
+
+nav {
+  position: absolute;
+  background-color: #202020;
+  padding: 2em;
+  width: calc(100%-4em);
+  height: calc(100vm - 4em);
+}
+/*# sourceMappingURL=mainstyle.css.map */
