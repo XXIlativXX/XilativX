@@ -61,6 +61,12 @@ section .box {
   width: 70%;
 }
 
+section .box .youtube {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
 nav {
   position: absolute;
   background-color: #202020;
