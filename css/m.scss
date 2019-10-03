@@ -18,23 +18,23 @@ header {
 
 
     .icon {
-        max-width: 3.1%;
+        max-width: 10%;
         width:100%;
-        padding: 0 .5vw;
+        padding:0 1vw;
     }
 
     .logo{
         color: black;
         font-weight: bold;
-        font-size:4vw;
+        font-size:10vw;
     }
 
     .menu-btn{
         cursor: pointer;
         width: 100%;
-        max-width: 3%;
+        max-width: 10%;
         float: right;
-        margin: 1.5vw 1vw;
+        margin: 3vw 1vw;
     }
 }
 
@@ -54,7 +54,7 @@ section {
 
     .box {
         text-align: center;
-        font-size: 3vw;
+        font-size: 5vw;
         margin: 4em auto;
         width: 70%;
     }
