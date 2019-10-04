@@ -1,13 +1,14 @@
 body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  overflow: hidden;
 }
 
 body a, html a {
   text-decoration: none;
 }
 
-header {
+.light {
   -webkit-transition: .3s;
   transition: .3s;
   position: -webkit-sticky;
@@ -18,19 +19,50 @@ header {
   width: 100%;
 }
 
-header .icon {
+.light .icon {
   max-width: 10%;
   width: 100%;
   padding: 0 1vw;
 }
 
-header .logo {
+.light .logo {
   color: black;
   font-weight: bold;
   font-size: 10vw;
 }
 
-header .menu-btn {
+.light .menu-btn {
+  cursor: pointer;
+  width: 100%;
+  max-width: 10%;
+  float: right;
+  margin: 3vw 1vw;
+}
+
+.dark {
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: .3s;
+  background-color: #545454;
+  width: 100%;
+}
+
+.dark .icon {
+  max-width: 10%;
+  width: 100%;
+  padding: 0 1vw;
+}
+
+.dark .logo {
+  color: black;
+  font-weight: bold;
+  font-size: 10vw;
+}
+
+.dark .menu-btn {
   cursor: pointer;
   width: 100%;
   max-width: 10%;
@@ -43,6 +75,10 @@ header .menu-btn {
   transition: .3s;
   -webkit-box-shadow: 0px 3px 3px 0px #545454;
           box-shadow: 0px 3px 3px 0px #545454;
+}
+
+.stop-scroll {
+  overflow: hidden;
 }
 
 .page-header {
@@ -68,10 +104,10 @@ section .box .youtube {
 }
 
 nav {
+  visibility: hidden;
   position: absolute;
-  background-color: #202020;
-  padding: 2em;
-  width: calc(100%-4em);
-  height: calc(100vm - 4em);
+  background-color: #545454;
+  width: calc(100%);
+  height: calc(100%);
 }
 /*# sourceMappingURL=m.css.map */

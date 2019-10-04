@@ -1,6 +1,7 @@
 body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    overflow: hidden;
 
     a {
         text-decoration: none;
@@ -8,7 +9,7 @@ body, html {
 }
 
 
-header {
+.light {
     transition: .3s;
     position: sticky;
     top: 0;
@@ -38,9 +39,43 @@ header {
     }
 }
 
+.dark {
+    transition: .3s;
+    position: sticky;
+    top: 0;
+    transition: .3s;
+    background-color: #545454;
+    width: 100%;
+
+
+    .icon {
+        max-width: 10%;
+        width:100%;
+        padding:0 1vw;
+    }
+
+    .logo{
+        color: black;
+        font-weight: bold;
+        font-size:10vw;
+    }
+
+    .menu-btn{
+        cursor: pointer;
+        width: 100%;
+        max-width: 10%;
+        float: right;
+        margin: 3vw 1vw;
+    }
+}
+
 .sticky {
     transition: .3s;
     box-shadow: 0px 3px 3px 0px #545454;
+}
+
+.stop-scroll{
+    overflow: hidden;
 }
 
 
@@ -66,9 +101,10 @@ section {
 }
 
 nav {
+    visibility:hidden;
     position: absolute;
-    background-color: #202020;
-    padding: 2em;
-    width: calc(100%-4em);
-    height: calc(100vm - 4em);
+    background-color: #545454;
+    width: calc(100%);
+    height: calc(100%);
+
 }

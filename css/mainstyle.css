@@ -7,7 +7,11 @@ body a, html a {
   text-decoration: none;
 }
 
-header {
+body {
+  overflow: hidden;
+}
+
+.light {
   -webkit-transition: .3s;
   transition: .3s;
   position: -webkit-sticky;
@@ -18,19 +22,19 @@ header {
   width: 100%;
 }
 
-header .icon {
+.light .icon {
   max-width: 3.1%;
   width: 100%;
   padding: 0 .5vw;
 }
 
-header .logo {
+.light .logo {
   color: black;
   font-weight: bold;
   font-size: 4vw;
 }
 
-header .menu-btn {
+.light .menu-btn {
   cursor: pointer;
   width: 100%;
   max-width: 3%;
@@ -45,9 +49,40 @@ header .menu-btn {
           box-shadow: 0px 3px 3px 0px #545454;
 }
 
-.page-header {
-  height: 200px;
-  background: #CCC;
+.dark {
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: .3s;
+  background-color: #3B3B3B;
+  width: 100%;
+}
+
+.dark .icon {
+  max-width: 3.1%;
+  width: 100%;
+  padding: 0 .5vw;
+}
+
+.dark .logo {
+  color: black;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+.dark .menu-btn {
+  cursor: pointer;
+  width: 100%;
+  max-width: 3%;
+  float: right;
+  margin: 1.5vw 1vw;
+}
+
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -68,10 +103,10 @@ section .box .youtube {
 }
 
 nav {
+  visibility: hidden;
   position: absolute;
-  background-color: #202020;
-  padding: 2em;
-  width: calc(100%-4em);
-  height: calc(100vm - 4em);
+  background-color: #3B3B3B;
+  width: calc(100%);
+  height: calc(100%);
 }
 /*# sourceMappingURL=mainstyle.css.map */

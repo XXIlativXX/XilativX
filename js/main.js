@@ -4,13 +4,35 @@ if(window.location.href != "https://xxilativxx.github.io/m") {
     }
 }
 
+
 document.addEventListener("DOMContentLoaded", function(){
 
     //When scrolling execute PersistentBar
     window.onscroll = function() {persistentBar()};
 
-    //get header
+    var body = document.getElementById("body");
+    
     var header = document.getElementById("myHeader");
+
+    var overlay = document.getElementById("overlay");
+
+    var open_menu = document.getElementById("open-menu");
+
+    open_menu.onclick = function() {
+        if (header.classList.contains("light")){
+            overlay.style.visibility = "visible";
+            header.classList.remove("light");
+            header.classList.add("dark");
+            body.classList.add("stop-scroll")
+        }
+        else {
+            overlay.style.visibility = "hidden";
+            header.classList.remove("dark");
+            header.classList.add("light");
+            body.classList.remove("stop-scroll")
+        }
+    }
+    
 
     //get offset position of navbar
     var sticky = header.offsetTop;
